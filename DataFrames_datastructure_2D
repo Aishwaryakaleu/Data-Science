@@ -1,0 +1,4 @@
+**********************DataFrames datastructure 2D**************************
+d = {'name' : ['Aish', 'Jay', 'unknown'], 'Phone' : ['x', 'xsmax', 'un']}
+pd.DataFrame(d)
+
