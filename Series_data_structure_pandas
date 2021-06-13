@@ -1,0 +1,9 @@
+**********************Series_data_structure_pandas***********************
+
+import pandas as pd
+l = [10, 20, 30, 40]
+pd.Series(l)
+
+
+********************* to edith the index*****************
+pd.Series(l, index = [*, **, ***, ****])
