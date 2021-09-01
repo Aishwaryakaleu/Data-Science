@@ -1,0 +1,79 @@
+NumPy is a general-purpose array-processing package. It provides a high-performance multidimensional array object, and tools for working with these arrays. 
+It is the fundamental package for scientific computing with Python
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+import numpy as np  ## initially Lets import numpy
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+my_lst=[1,2,3,4,5]
+
+## Accessing the array elements
+arr[3]   ------------> Output 4
+
+arr=np.array(my_lst)
+print(arr)   --------> output :  [1 2 3 4 5]
+type(arr)    --------> output :  numpy.ndarray
+
+
+*********************************************
+
+## Multinested array
+my_lst1 = [1,2,3,4,5]
+my_lst2 = [2,3,4,5,6]
+my_lst3 = [100,200,300,400,500]
+arr1 = np.array([my_lst1,my_lst2,my_lst3])
+arr1
+
+Output
+array([[  1,   2,   3,   4,   5],
+       [  2,   3,   4,   5,   6],
+       [100, 200, 300, 400, 500]])   // two square barckets trepresent the 2-D array //
+       
+      
+arr.shape  ----------------->  output : (3, 5)
+arr[:,:]  ------------------> Always firt one indicates row and the second indicates the column as there is is no value given, this statement picks everything //
+arr1[1:,:2]
+arr1[:,3:]
+arr[3:]=100
+
+
+### Some conditions very useful in Exploratory Data Analysis 
+
+val=2
+
+arr[arr<3]
+
+
+## Create arrays and reshape
+
+np.arange(0,10).reshape(5,2)
+
+arr1=np.arange(0,10).reshape(2,5)
+
+arr2=np.arange(0,10).reshape(2,5)
+
+arr1 * arr2
+
+
+np.ones((2,5),dtype=int)
+np.random.rand(3,3)
+arr_ex=np.random.randn(4,4)
+
+
+
+import seaborn as sns
+arr_ex=np.random.randn(5,5)
+arr_ex
+sns.distplot(pd.DataFrame(arr_ex.reshape(25,1)))
+
+// C:\Users\Aishwarya Rao\anaconda3\lib\site-packages\seaborn\distributions.py:2551: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning) //
+  
+np.random.randint(0,100,8).reshape(4,2)
+np.random.random_sample((1,5))
+
+  
+
+
+
+
+
