@@ -1,0 +1,6 @@
+conda install numpy
+conda install pandas
+conda install matplotlib
+pip install -U scikit-learn
+conda install seaborn
+conda install -c pytorch pytorch
